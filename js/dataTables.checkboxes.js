@@ -143,7 +143,7 @@
 
                if(ctx.aoColumns[i].mRender === null){
                   colOptions['render'] = function(){
-                     return '<input type="checkbox" class="dt-checkboxes" autocomplete="off">';
+                     return '<input type="checkbox" class="dt-checkboxes" autocomplete="off" aria-label="Select row">';
                   };
                }
 
@@ -1059,7 +1059,7 @@
       * @type {mixed}
       * @default `<input type="checkbox">`
       */
-      selectAllRender: '<input type="checkbox" autocomplete="off">'
+      selectAllRender: '<input type="checkbox" autocomplete="off" aria-label="Select all">'
    };
 
 
